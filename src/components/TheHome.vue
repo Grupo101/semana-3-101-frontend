@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Navbars</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -15,6 +15,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="d-flex">
             <button
@@ -37,7 +38,13 @@
       <p>
         {{ user.email }}
       </p>
+     
     </div>
+    <div>
+      <a href="https://www.eltiempo.com/">Download source file</a>
+    </div>
+
+
   </div>
 
 </template>
