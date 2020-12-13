@@ -10,21 +10,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../assets/Banner1.jpg" class="d-block w-100 " alt="Banner1" style="object-fit:cover;" height="300">
+                <img src="../../assets/Banner1.jpg" class="d-block w-100 " alt="Banner1" style="object-fit:cover;" height="300">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Las noticias mas actualizadas</h5>
                     <p>Continúa y conoce cuales son las noticias más recientes del momento.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../assets/Banner2.jpg" class="d-block w-100" alt="Banner2" style="object-fit:cover;" height="300">
+                <img src="@/assets/Banner2.jpg" class="d-block w-100" alt="Banner2" style="object-fit:cover;" height="300">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Los últimos avances en salud</h5>
                     <p>Sabemos que la salud nos interesa a todos.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../assets/Banner3.jpeg" class="d-block w-100" alt="Banner3" style="object-fit:cover;" height="300">
+                <img src="@/assets/Banner3.jpeg" class="d-block w-100" alt="Banner3" style="object-fit:cover;" height="300">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Las novedades tecnólogicas</h5>
                     <p>Porque la tecnología no se detiene.</p>

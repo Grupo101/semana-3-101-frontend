@@ -98,10 +98,10 @@
 
 <script>
 
-import TeamCard from "./TeamCard.vue";
-import PageFooter from "./PageFooter.vue";
-import SectionApi from "./SectionApi.vue";
-import TopBanner from "./TopBanner.vue";
+import TeamCard from "./home/TeamCard";
+import PageFooter from "./home/PageFooter.vue";
+import SectionApi from "./home/SectionApi.vue";
+import TopBanner from "./home/TopBanner.vue";
 
 export default {
 

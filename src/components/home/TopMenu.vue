@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark ">
         <a class="navbar-brand " href="# ">
-            <img src="../assets/LogoTecSalud.jpg" width="40 " height="40
+            <img src="@/assets/LogoTecSalud.jpg" width="40 " height="40
         " class="d-inline-block align-center " alt=" " loading="lazy "> TECNOLOGÍA Y SALUD
         </a>
         <div class="collapse navbar-collapse justify-content-end " id="navbarNav ">
