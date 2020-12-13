@@ -70,7 +70,7 @@ export default {
             localStorage.setItem('user',JSON.stringify(user)); //almaceno objeto user
             if (token){
                 swal("Bienvenid@!", "Sus datos son correctos!", "success");
-                this.$router.push('/home');
+                this.$router.push('/about');
             }
 
             }
