@@ -45,12 +45,67 @@
     </div>
 
 
+    
+    <div id="equipo" class="container-fluid  pb-5  pt-2">
+      <h2 class="text-center mt-5 pb-5">INTEGRANTES EQUIPO 101 MISIÓN TIC</h2>
+      <div class="card-group pt-3 ">
+        <div class="row row-eq-height">
+          <div class="col-sm-1"></div>
+          <div
+            class="col-sm-12 col-lg-2 p-1"
+            v-for="(member1, index) of member"
+            :key="index"
+          >
+            <team-card :member="member1"></team-card>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div  id="new" class="container-fluid">
+      <h2 class="text-center pt-5 mb-3">NOTICIAS</h2>
+
+      <section-api> </section-api>
+    </div>
+
+
+    <div class="container-fluid pt-5">
+      <page-footer></page-footer>
+    </div>
+
+
+
+
   </div>
 
 </template>
 
 <script>
+
+import TeamCard from "./TeamCard.vue";
+import PageFooter from "./PageFooter.vue";
+import SectionApi from "./SectionApi.vue";
+//import TopBanner from "./components/TopBanner.vue";
+
 export default {
+
+components: {
+    // TopBanner,
+    TeamCard,
+    SectionApi,
+    PageFooter,
+  },
+
+
+
   data() {
     return {
       user: {},
