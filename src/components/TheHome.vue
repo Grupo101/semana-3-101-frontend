@@ -76,7 +76,7 @@
         <div class="row row-eq-height">
           <div class="col-sm-1"></div>
           <div
-            class="col-sm-12 col-lg-2 p-1"
+            class="d-flex col-sm-12 col-lg-2 p-1"
             v-for="(member1, index) of member"
             :key="index"
           >
