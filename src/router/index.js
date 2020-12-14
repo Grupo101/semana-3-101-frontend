@@ -37,9 +37,9 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "home" */ '../views/About.vue'),
     //se carga cuando se solicite al click optimizar recursos
-    // meta:{                  //requiere autenticacion  data no propia identifica la data que nos interesa
-    //   requiresAuth:true,      ///se guarda en esta variable un true
-    //}   ///esta ruta requiere autenticacion
+     meta:{                  //requiere autenticacion  data no propia identifica la data que nos interesa
+       requiresAuth:true,      ///se guarda en esta variable un true
+    }   ///esta ruta requiere autenticacion
   },
 
   
