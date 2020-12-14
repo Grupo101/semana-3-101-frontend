@@ -1,10 +1,10 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Pagina de ingreso despues del login</h1>
 
     <div class="container">  
     <!-- //mostrar los datos en pantalla -->
-      <p>parametros></p>
+      
       <p>
        
         {{ user.username }}
@@ -15,7 +15,7 @@
      
     </div>
 
-    <input type="button" value="Click me"  @click.prevent="logOut">
+    <input type="button" value="Salir"  @click.prevent="logOut">
 
   </div>
 </template>
@@ -42,9 +42,22 @@ export default {
       localStorage.removeItem("jwt");
       localStorage.removeItem("user");
       this.$router.push("/");
-      }
-    },
+	  },
+	  
+	  getUserDetails() {  ///ccctraer datos del usuario donde se requiera
+      let user = localStorage.getItem('user');
+      let token = localStorage.getItem('jwt');
+       if(token){
+         this.user = JSON.parse(user);
+	   } 
+	  }
+	  
 
+
+    },
+	created() {
+    this.getUserDetails();
+  },
 
 }
 </script>
