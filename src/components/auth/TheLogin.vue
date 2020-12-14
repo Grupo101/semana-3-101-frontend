@@ -25,7 +25,9 @@
 		</form><!-- form -->
 
 		<div class="button">
-			<a href="#">Download source file</a>
+			<!-- <a href="#">Download source file</a> -->
+			<button type="button" class="btn btn-outline-success glyphicon glyphicon-share" @click.prevent="logOut"> Salir</button >
+			
 		</div><!-- button -->
 	</section><!-- content -->
 </div><!-- container -->
@@ -34,9 +36,9 @@
 
 
 
-    <pre> 
+    <!-- <pre> 
         {{login}}
-    </pre>
+    </pre> -->
 </div>
 </template>
 
@@ -82,7 +84,13 @@ export default {
             }
 
 
-        }
+		},
+		
+		logOut() {
+			localStorage.removeItem("jwt");
+			localStorage.removeItem("user");
+			this.$router.push("/");
+			},
 
     }
 }
