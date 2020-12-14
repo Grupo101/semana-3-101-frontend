@@ -19,8 +19,8 @@
 				<input @click.prevent="loginUser" type="submit" value="Entrar" />
 				
                 
-                <a href="#">Lost your password?</a>
-				<a href="#">Register</a>
+                <a href="#">Recuperar tu password?</a>
+				<a href="#">Registrar</a>
 			</div>
 		</form><!-- form -->
 
