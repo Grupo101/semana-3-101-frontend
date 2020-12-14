@@ -1,7 +1,9 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+    <the-menu></the-menu>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid"> -->
         <!-- <a class="navbar-brand" href="#">Navbars</a> -->
         <!-- <button
           class="navbar-toggler"
@@ -14,16 +16,16 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button> -->
-        <button
+        <!-- <button
               class="btn btn-outline-success"
               type="button"
               @click.prevent="logIn"
             >
               Login
-            </button>
+            </button> -->
 
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="d-flex">
             <button
               class="btn btn-outline-success"
@@ -33,23 +35,23 @@
               Salir
             </button>
           </form>
-        </div>
-      </div>
-    </nav>
+        </div> -->
+      <!-- </div>
+    </nav> -->
 
-    <div class="container">  
+    <!-- <div class="container">   -->
     <!-- //mostrar los datos en pantalla -->
-      <p>
+      <!-- <p>
         {{ user.username }}
       </p>
       <p>
         {{ user.email }}
       </p>
      
-    </div>
-    <div>
+    </div> -->
+    <!-- <div>
       <a href="https://www.eltiempo.com/">Download source file</a>
-    </div>
+    </div> -->
 
 <!-- seccion banner y menu -->
 
@@ -109,6 +111,7 @@ import TeamCard from "./home/TeamCard";
 import PageFooter from "./home/PageFooter.vue";
 import SectionApi from "./home/SectionApi.vue";
 import TopBanner from "./home/TopBanner.vue";
+import TheMenu from '../components/TheMenu.vue';
 
 export default {
 
@@ -117,6 +120,7 @@ components: {
     TeamCard,
     SectionApi,
     PageFooter,
+    TheMenu,
   },
 
 
@@ -177,17 +181,17 @@ components: {
        } 
 
     },
-    logOut() {
-      localStorage.removeItem("jwt");
-      localStorage.removeItem("user");
-      this.$router.push("/");
-    },
+    // logOut() {
+    //   localStorage.removeItem("jwt");
+    //   localStorage.removeItem("user");
+    //   this.$router.push("/");
+    // },
 
-    logIn() {
-      //localStorage.removeItem("jwt");
-      //localStorage.removeItem("user");
-      this.$router.push("/login");
-    },
+    // logIn() {
+    //   //localStorage.removeItem("jwt");
+    //   //localStorage.removeItem("user");
+    //   this.$router.push("/login");
+    // },
 
   },
   created() {

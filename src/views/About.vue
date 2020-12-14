@@ -1,34 +1,37 @@
 <template>
   <div class="about">
-    <div d-flex> 
-		<div class="alert alert-success">Bienvenid@ {{ user.username }}  </div>
-		<div class="alert alert-info">Su email es  {{ user.email }}</div>
-	</div>
+    <the-menu></the-menu>
+    <!-- <top-menu></top-menu> -->
 
-	<div class="container">  
-    <!-- //mostrar los datos en pantalla -->
-      
-
-	  <div class="row">
-    <div class="col-12">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/67Sb3M8GQwQ" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div d-flex>
+      <div class="alert alert-success">Bienvenid@ {{ user.username }}</div>
+      <div class="alert alert-info">Su email es {{ user.email }}</div>
     </div>
 
-	  </div>
-      <p>
-       
+    <div class="container">
+      <!-- //mostrar los datos en pantalla -->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/67Sb3M8GQwQ"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- <p>
         {{ user.username }}
       </p>
       <p>
         {{ user.email }}
-      </p> 
-     
+      </p> -->
     </div>
 
-    <input type="button" value="Salir"  @click.prevent="logOut">
-
+    <input type="button" value="Salir" @click.prevent="logOut" />
   </div>
 </template>
 
@@ -36,11 +39,14 @@
 <script>
 // @ is an alias to /src
 //import TheHome from '@/components/TheHome.vue'
+import TopMenu from "../components/home/TopMenu";
+import TheMenu from "../components/TheMenu.vue";
 
 export default {
   name: "About",
   components: {
-    //TheHome
+    TopMenu,
+    TheMenu,
   },
 
   data() {
