@@ -62,7 +62,7 @@ export default {
             try{
             //respnse guarda todo lo que da la consulta   
             ///es la ruta donde realizamos la peticion 
-            let response = await this.$http.post('/api/user/login', this.login); //a donde lo envio y que le envio asi es mi ruta en el back end
+            let response = await this.$http.post('/api/user/signin', this.login); //a donde lo envio y que le envio asi es mi ruta en el back end
             console.log(response.data)
             //peticion con axios a esta url que la defini en main.js que se intente logiar
             // api  ruta usuario
