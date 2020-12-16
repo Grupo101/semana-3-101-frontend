@@ -4,7 +4,7 @@
     <!-- <top-menu></top-menu> -->
 
     <div d-flex>
-      <div class="alert alert-success">Bienvenid@ {{ user.username }}</div>
+      <div class="alert alert-success">Bienvenid@ {{ user.name }}</div>
       <div class="alert alert-info">Su email es {{ user.email }}</div>
     </div>
 
