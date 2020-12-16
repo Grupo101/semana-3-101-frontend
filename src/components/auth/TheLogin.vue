@@ -78,7 +78,7 @@ export default {
             }
             catch(e){
                 swal("Error!", "Verifique su nombre de usuario o cantraseña !", "error");
-
+				this.$router.push('/about');
 
                 //console.log(err.response)
             }
