@@ -63,17 +63,23 @@ export default {
             //respnse guarda todo lo que da la consulta   
             ///es la ruta donde realizamos la peticion 
             let response = await this.$http.post('/api/auth/signin', this.login); //a donde lo envio y que le envio asi es mi ruta en el back end
-            console.log(response.data)
+			console.log(response.data)
+			
             //peticion con axios a esta url que la defini en main.js que se intente logiar
             // api  ruta usuario
-            let token = response.data.tokenReturn;
+            let token = response.data.accessToken;
             let user = response.data.user;
             localStorage.setItem('jwt',token); ///almaceno token
             localStorage.setItem('user',JSON.stringify(user)); //almaceno objeto user
-            if (token){
-                swal("Bienvenid@!", "Sus datos son correctos!", "success");
-                this.$router.push('/about');
-            }
+             if (token){
+                 swal("Bienvenid@!", "Sus datos son correctos!", "success");
+                 this.$router.push('/about');
+			 }
+			  //else{
+			//  	swal("Error else!", "Verifique su nombre de usuario o cantraseña !", "error");
+			//  }
+
+
 
             }
             catch(e){
